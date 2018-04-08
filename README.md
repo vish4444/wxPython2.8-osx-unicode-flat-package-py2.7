@@ -19,9 +19,9 @@ How to fix WXPython Issues in OS X Terminal
   - mkdir ~/scripts     
   - cd ~/working_directory/wxPython2.8-osx-unicode-universal-py2.7.pkg/Contents/Resources/     
   - cp preflight ~/scripts/preinstall     
-  - cp postflight ~scripts/postinstall - Create flat package using pkgbuild     
+  - cp postflight ~/scripts/postinstall - Create flat package using pkgbuild     
   - cd ~/working_directory     
-  - pkgbuild —root ~/package_root —scripts ~/scripts —identifier com.wxwidgets.wxpython wxPython2.8-osx-unicode-flat-package-py2.7.pkg 
+  - pkgbuild --root ~/package_root --scripts ~/scripts --identifier com.wxwidgets.wxpython wxPython2.8-osx-unicode-flat-package-py2.7.pkg 
   - Now Install the new wxPython package     
   - sudo installer -pkg ~/working_directory/wxPython2.8-osx-unicode-flat-package-py2.7.pkg -target / 
   - Viola!
